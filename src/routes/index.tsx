@@ -45,7 +45,7 @@ function Index() {
         </div>
         <address className="contact-list not-italic">
           <a className="contact-row" href="tel:+12063938345"><Phone /><div><span className="contact-row-label">Phone</span><span className="contact-row-value">206-393-8345</span></div><ArrowUpRight /></a>
-          <a className="contact-row" href="mailto:wanli26@gmail.com"><Mail /><div><span className="contact-row-label">Email</span><span className="contact-row-value">wanli26@gmail.com</span></div><ArrowUpRight /></a>
+          <a className="contact-row" href="mailto:wanlilau1234@gmail.com"><Mail /><div><span className="contact-row-label">Email</span><span className="contact-row-value">wanlilau1234@gmail.com</span></div><ArrowUpRight /></a>
           <div className="contact-row"><MapPin /><div><span className="contact-row-label">Address</span><span className="contact-row-value">752 Summerhill Ridge Dr NW<br />Issaquah, WA</span></div></div>
         </address>
       </div>

@@ -30,7 +30,7 @@ function Privacy() {
     <h2>Policy updates</h2>
     <p>This policy may be updated as our website or practices change. The current version will be available on this page.</p>
     <h2>Contact</h2>
-    <p>For privacy questions, contact Wanli Consultancy LLC at <a href="mailto:wanli26@gmail.com">wanli26@gmail.com</a> or <a href="tel:+12063938345">206-393-8345</a>.</p>
+    <p>For privacy questions, contact Wanli Consultancy LLC at <a href="mailto:wanlilau1234@gmail.com">wanlilau1234@gmail.com</a> or <a href="tel:+12063938345">206-393-8345</a>.</p>
     <p>752 Summerhill Ridge Dr NW, Issaquah, WA.</p>
   </main>;
 }
