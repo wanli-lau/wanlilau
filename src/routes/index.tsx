@@ -6,7 +6,7 @@ import lakeImage from '@/assets/northwest-lake.jpg';
 export const Route = createFileRoute("/")({
   head: () => ({ meta: [
     { title: 'Wanli Consultancy LLC | Seattle Lifestyle Coaching' },
-    { name: 'description', content: 'A thoughtful approach to lifestyle coaching in Seattle, WA. Contact Wanli Consultancy LLC to book. Hours: 4pm–10pm PT.' },
+    { name: 'description', content: 'A thoughtful approach to lifestyle coaching in Seattle, WA. Contact Wanli Consultancy LLC to book. Hours: 3pm–10pm PT.' },
     { property: 'og:title', content: 'Wanli Consultancy LLC | Seattle Lifestyle Coaching' },
     { property: 'og:description', content: 'Find clarity, build everyday habits, and move forward with thoughtful lifestyle coaching.' },
     { property: 'og:type', content: 'website' },
@@ -41,7 +41,7 @@ function Index() {
     <section id="contact" className="contact" aria-labelledby="contact-title">
       <div className="contact-grid site-width">
         <div><div className="section-label">Let’s connect</div><h2 id="contact-title">Your next chapter<br />starts with a conversation.</h2><p className="contact-description">Reach out by phone or email to ask a question or book a coaching session.</p>
-          <div className="hours"><Clock3 /><div><div className="hours-label">Hours</div><div>4pm – 10pm PT <span className="text-muted-foreground">· Pacific Time</span></div></div></div>
+          <div className="hours"><Clock3 /><div><div className="hours-label">Hours</div><div>3pm – 10pm PT <span className="text-muted-foreground">· Pacific Time</span></div></div></div>
         </div>
         <address className="contact-list not-italic">
           <a className="contact-row" href="tel:+12063938345"><Phone /><div><span className="contact-row-label">Phone</span><span className="contact-row-value">206-393-8345</span></div><ArrowUpRight /></a>
