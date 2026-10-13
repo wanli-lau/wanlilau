@@ -22,14 +22,29 @@ jobs:
       - run: npm run build
         env:
           GITHUB_PAGES: "true"
-      - run: |
-          cp dist/index.html dist/404.html
-          mkdir -p dist/terms dist/privacy
-          cp dist/index.html dist/terms/index.html
-          cp dist/index.html dist/privacy/index.html
+      - name: Find build output
+        id: out
+        run: |
+          if [ -f dist/index.html ]; then echo "dir=dist" >> "$GITHUB_OUTPUT"
+          elif [ -f dist/client/index.html ]; then echo "dir=dist/client" >> "$GITHUB_OUTPUT"
+          elif [ -f build/index.html ]; then echo "dir=build" >> "$GITHUB_OUTPUT"
+          elif [ -f out/index.html ]; then echo "dir=out" >> "$GITHUB_OUTPUT"
+          else
+            echo "No index.html found after the build. Folders and files that exist:"
+            ls -la
+            find . -maxdepth 3 -not -path "./node_modules/*" -not -path "./.git/*" | head -100
+            exit 1
+          fi
+      - name: Prepare pages
+        run: |
+          D="${{ steps.out.outputs.dir }}"
+          cp "$D/index.html" "$D/404.html"
+          mkdir -p "$D/terms" "$D/privacy"
+          cp "$D/index.html" "$D/terms/index.html"
+          cp "$D/index.html" "$D/privacy/index.html"
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: ${{ steps.out.outputs.dir }}
   deploy:
     needs: build
     runs-on: ubuntu-latest
