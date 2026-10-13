@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { ArrowDown, ArrowUpRight, Clock3, Compass, Sprout, Sun, Phone, Mail, MapPin } from 'lucide-react';
+import { ArrowUpRight, Clock3, Compass, Sprout, Sun, Phone, Mail, MapPin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import lakeImage from '@/assets/northwest-lake.jpg';
 
@@ -23,7 +23,7 @@ function Index() {
         <div className="eyebrow">A calmer way forward</div>
         <h1 id="home-title">Wanli<br />Consultancy LLC</h1>
         <p className="hero-copy">Thoughtful lifestyle coaching to help you find clarity, create balance, and make space for what matters.</p>
-        <Button asChild variant="secondary" className="booking-button"><a href="#contact">Contact us to book <ArrowDown /></a></Button>
+        <Button asChild variant="secondary" className="booking-button"><a href="https://book.wanlilau.workers.dev" target="_blank" rel="noopener noreferrer">Book an appointment <ArrowUpRight /></a></Button>
         <p className="hero-note">Based in Seattle, Washington</p>
       </div>
     </section>
